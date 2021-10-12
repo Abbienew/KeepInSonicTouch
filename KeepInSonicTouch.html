@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #000000;
+            width: 100%;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140416791-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-140416791-1');
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Keep In Sonic Touch</h2>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>About The Project</h2>
+                <h5>Current Progress, October 11, 2021</h5>
+                <p><I> “ Hearing is basically a specialized form of touch. Sound is simply vibrating air which the ear
+                    picks up and converts to electrical signals, which are then interpreted by the brain. The sense of
+                    hearing is not only the sense that can do this, touch can do this too. ”（Glennie 2015）</I></p><br>
+                <div class="fakeimg"><img src=img/KeepInSonicTouch.jpg width="30%" height="30%"><br></div><br>
+                <p>What kind of sound does our skin listen to ? What does soundscape mean for remote communication ?
+                    With the inspiration of sound process and vibrascape, 《Keep In Sonic Touch》is a research lead
+                    project aimed to experiment with the information soundscape captured by skin. </p><br>
+                <p><I> “ The vibroscape is the entire set of substrate or airborne vibrations that is present in a
+                        specific portion of a geographical area. ” （Sturm et al. 2018）</I></p><br>
+                <div class="fakeimg"><img src=img/demo.png width="30%" height="30%"></div><br>
+                <p>If a soundscape contains so much landscape information, when it is transformed as vibration, can the
+                    soundscape captured on our skin be designed as a tangible interface for people feeling closer when
+                    communicating remotely ? With these questions, I started a wearable device which aims to translate
+                    the sounds into tactile information, concretized as a tangible interface to make people feel closer
+                    when communicating from a distance. <br><br>
+                <div class="fakeimg"><img src=img/prototypingprocess_1.JPG width="30%" height="30%"></div><br>
+                <p>​​In the first stage of prototyping, I started with a local server version, combining contact microphone,
+                arduino uno, a mobile vibration motor and a MaxMSP patcher. Skin is the human body's largest organ,
+                It contains lots of physical environment information which influences the human body. It is the first
+                contact interface which sound and soundscape deliver to human's body intuitively. Therefore, I started to
+                think about turning it into some information for tangible and tactile sensation. With the limitation of the motor, in
+                the current prototyping stage, the vibration is only triggered by the soundscape's volume. In terms of the information
+                of the soundscape, spectrum analysis will be the next step. Meanwhile, the internet and a wearable device combining contact 
+                microphone and vibration motors with the laptop is still working in progress. Keep in touch if you are interested in the project. <br><br>
+                <div class="fakeimg"><video class="tab" controls width="30%" height="30%">Your browser does not support the &lt;video&gt; tag.
+                <source src="img/DemoFilm.mp4" ></video></div><br>
+                <p>《Keep In Sonic Touch》 is in second stage prototyping ,starting from the SomaRumor festival 2021. thank for the support from Professor 
+                Nicolás Varchausky, Professor Matt Lewis, Pei-Yao Chang, Camila Proto, Susan Atwill, Guilherme Farkas and my family. </p><br>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About The Designer</h2>
+                <div class="fakeimg" ><img src=img/icon.jpg width="30%" height="30%"></div>
+                <p>Sound and media lover from Taiwan, currently studying in Royal College of Art, focusing on
+                    experimental media and sound design. <br><br>
+                    Her research is based on speculative design methodology with a time-based perspective. In the meantime, her creation is mainly about sound interaction design,
+                    music and media production with human-center perspective in virtual and physical space.</p>
+            </div>
+            <div class="card">
+                <h3>Keywords</h3>
+                <div class="fakeimg">Sound Art</div><br>
+                <div class="fakeimg">Skin</div><br>
+                <div class="fakeimg">Soundscape</div><br>
+                <div class="fakeimg">Vibrasacpe</div><br>
+                <div class="fakeimg">Communication</div><br>
+                <div class="fakeimg">Internet</div><br>
+            </div>
+            <div class="card">
+                <h3>Follow The Designer</h3>
+                <a href="www.shangyunwu.com">www.shangyunwu.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+     <div class="centered">
+         <p>All Rights Reserved© 2021 SHANGYUNWU</p>
+     </div>
+    </div>
+
+</body>
+
+</html>
