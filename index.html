@@ -14,6 +14,8 @@
             font-family: Arial;
             padding: 20px;
             background: #f1f1f1;
+            font-family: "HTeX Gyre Adventor", "sans-serif",  sans-serif;
+            line-height: 1.3;
         }
 
         /* Header/Blog Title */
@@ -21,7 +23,9 @@
             padding: 30px;
             font-size: 40px;
             text-align: center;
-            background: white;
+            background: black;
+            color:white;
+            font-family: "HTeX Gyre Adventor", "sans-serif", serif;
         }
 
         /* Create two unequal columns that floats next to each other */
@@ -35,12 +39,23 @@
         .rightcolumn {
             float: left;
             width: 25%;
+            height: 100%;
             padding-left: 20px;
+            background-color: #f1f1f1;
+            color: white;
         }
 
         /* Fake image */
         .fakeimg {
-            background-color: #000000;
+            width: 100%;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Fake image */
+        .fakeimg2 {
+            background-color: black;
             width: 100%;
             padding: 10px;
             color: #ffffff;
@@ -49,7 +64,16 @@
 
         /* Add a card effect for articles */
         .card {
-            background-color: white;
+            background-color:white;
+            color: black;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card2 {
+            background-color:black;
+            color: white;
             padding: 20px;
             margin-top: 20px;
         }
@@ -64,14 +88,19 @@
         /* Footer */
         .footer {
             padding: 20px;
+            color: white;
             text-align: center;
-            background: #ddd;
+            background: #000000;
             margin-top: 20px;
+        }
+
+        .ref {
+            color: grey;
+
         }
 
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
-
             .leftcolumn,
             .rightcolumn {
                 width: 100%;
@@ -102,39 +131,95 @@
         <div class="leftcolumn">
             <div class="card">
                 <h2>About The Project</h2>
-                <h5>Current Progress, October 11, 2021</h5>
-                <p><I> “ Hearing is basically a specialized form of touch. Sound is simply vibrating air which the ear
+                <h5>Latest Update, October 11, 2021</h5><br>
+
+                <h3>Abstract</h3>
+                <p class="ref"><I> “ Hearing is basically a specialized form of touch. Sound is simply vibrating air which the ear
                     picks up and converts to electrical signals, which are then interpreted by the brain. The sense of
-                    hearing is not only the sense that can do this, touch can do this too. ”（Glennie 2015）</I></p><br>
-                <div class="fakeimg"><img src=img/KeepInSonicTouch.jpg width="30%" height="30%"><br></div><br>
+                    hearing is not only the sense that can do this, touch can do this too. ”（Glennie 2015）</I></p>
                 <p>What kind of sound does our skin listen to ? What does soundscape mean for remote communication ?
-                    With the inspiration of sound process and vibrascape, 《Keep In Sonic Touch》is a research lead
-                    project aimed to experiment with the information soundscape captured by skin. </p><br>
-                <p><I> “ The vibroscape is the entire set of substrate or airborne vibrations that is present in a
-                        specific portion of a geographical area. ” （Sturm et al. 2018）</I></p><br>
-                <div class="fakeimg"><img src=img/demo.png width="30%" height="30%"></div><br>
+                    With the inspiration of sound process and vibroscape, 《Keep In Sonic Touch》is a research-lead
+                    project aimed to experiment with the information transmission for letting people feel closer when
+                    communiting remotely. </p>
+                <p class="ref"><I> “ The vibroscape is the entire set of substrate or airborne vibrations that is present in a
+                        specific portion of a geographical area. ” （Sturm et al. 2018）</I></p>
                 <p>If a soundscape contains so much landscape information, when it is transformed as vibration, can the
                     soundscape captured on our skin be designed as a tangible interface for people feeling closer when
                     communicating remotely ? With these questions, I started a wearable device which aims to translate
                     the sounds into tactile information, concretized as a tangible interface to make people feel closer
-                    when communicating from a distance. <br><br>
-                <div class="fakeimg"><img src=img/prototypingprocess_1.JPG width="30%" height="30%"></div><br>
-                <p>​​In the first stage of prototyping, I started with a local server version, combining contact microphone,
-                arduino uno, a mobile vibration motor and a MaxMSP patcher. Skin is the human body's largest organ,
-                It contains lots of physical environment information which influences the human body. It is the first
-                contact interface which sound and soundscape deliver to human's body intuitively. Therefore, I started to
-                think about turning it into some information for tangible and tactile sensation. With the limitation of the motor, in
-                the current prototyping stage, the vibration is only triggered by the soundscape's volume. In terms of the information
-                of the soundscape, spectrum analysis will be the next step. Meanwhile, the internet and a wearable device combining contact 
-                microphone and vibration motors with the laptop is still working in progress. Keep in touch if you are interested in the project. <br><br>
-                <div class="fakeimg"><video class="tab" controls width="30%" height="30%">Your browser does not support the &lt;video&gt; tag.
-                <source src="img/DemoFilm.mp4" ></video></div><br>
-                <p>《Keep In Sonic Touch》 is in second stage prototyping ,starting from the SomaRumor festival 2021. thank for the support from Professor 
-                Nicolás Varchausky, Professor Matt Lewis, Pei-Yao Chang, Camila Proto, Susan Atwill, Guilherme Farkas and my family. </p><br>
+                    when communicating from a distance. </p><br>
+                
+                <h3>Design Methodology</h3>
+                <p>Soundscape is a collaborative of information which visuals cannot deliver. I have been divided into soundscape since I
+                was working on my personal musical project called “Illusion” which combined soundscape and music together to tell a
+                story in physical and mentally reality with sounds. Soundscape plays the role in sounds for describing the physical
+                space when it comes to composing the sounds for films, animation or games in those moving image media formats.</p>                
+                <p>Therefore, when it comes to the limit of a digital space which originates without sounds, it always reminds people it is
+                a virtual space. Even if people connect each other through video meetings in different physical spaces, the unclear
+                multi-physical space sounds that fill the entire virtual space does remind people that they are not together onsite even
+                if they already spend the time online together.</p>               
+                <p>In addition, the limitation of the loading of visual information both in physical and digital space is the other reason
+                for me to choose soundscape as the sensation information when it comes to the question about what components shape a
+                reality world. Soundscape is always here but not here until you notice it.</p>               
+                <p>However, what will be the key point to connect each other? A vibration idea popped up in my mind. Sound is always
+                defined as vibration in sound art territory. In the meantime, In medical territory, sounds are treated as a way for
+                therapy. Therefore, I started to think about a tangible interface which is a direct way to reveal vibration according to
+                the references and intuition.</p>                
+               <p>With the above thinking process, a question popped up to my mind : what is the connection between tangible and aural
+                information for human’s sensation. My idea is “skin”. Soundscape effects on our skin as an information
+                of energy and no need to mention tactile information. The design process turns out into an information transmission and
+                slowly founded a Sensation Design Methodology, escapilly for the media that relies on the internet for delivering
+                remotely in our physical world. For the project 《Keep In Sonic Touch》it is an aural to tactile information design
+                process for people who want to be together no matter where they are.</p></br>
+                
+                <h3>Prototyping and Testing</h3>
+                <h4>Arduino uno, Contact Microphone, Mobile Vibration and MaxMSP patcher</h4>
+                <p>In order to accomplish the idea, I had designed the simplest system framework as follows.</p>
+                <div class="fakeimg"><img src=img/systemframework.png width="50%" height="50%"></div><p></p>
+                <p>​​Currently, the project is in the second phase of prototyping. In the first stage of prototyping, I started with a local
+                server version in order to test the original idea to transmit the soundscapes into a real vibration. Therefore, it was
+                designed with a contact microphone, an arduino uno, a mobile vibration motor and a MaxMSP patcher.</p>
+                <p>According to the design methodology for creating the project, “skin” as the interface plays an important role to develop
+                the device between the machine with Internet, the contact microphone and vibration motors. Therefore, the first
+                prototype reveals a possible shape for combing above medium togher.</p>
+                <div class="fakeimg"><img src=img/prototype_2.JPG width="50%" height="50%"></div><br>
+                <p>​​The combination of contact microphone and vibration motor works with the function in which vibrations are triggered by
+                the volume of the soundscape.</p>
+                <div class="fakeimg"><video class="tab" controls width="50%" height="50%">Your browser does not support the &lt;video&gt; tag.
+                <source src="img/DemoFilm.mp4"></video></div>
+                <p>However, both the contact microphone and the vibration motor are designed as a removable interface which is what I
+                cannot display in the first prototype. Therefore, the schematic diagram is exhibited with a concept of removible
+                identification.</p>
+                <div class="fakeimg"><img src=img/demo.png width="50%" height="50%"></div>
+                <p>With the limitation of the motor, in the current prototyping stage, the vibration is only triggered by the soundscape's
+                volume. In terms of the information of the soundscape, spectrum analysis will be the next step. Meanwhile, according to
+                further research, 《Keep In Sonic Touch》is developing as a real reliable device without connecting the computer which is
+                closer to an information transmission process and wearable device without borders.</p></br>
+                <div class="fakeimg"><img src=img/remote.JPG width="50%" height="50%"></div>
+
+                <h3>About The Soundscape On The Skin</h3>
+                <p>In order to know what kind of the sound is produced by soundscape resonance on the skin, I recorded the soundscape
+                reconoce on my skin and my friends’ skin and uploaded them on the soundcloud.</p></br>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1142863009&color=%23221e1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/shangyun-wu" title="shangyun wu" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">shangyun wu</a> · <a
+                        href="https://soundcloud.com/shangyun-wu/flat87-london-a-skin" title="Flat87-London-A-Skin" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">Flat87-London-A-Skin</a></div>
+
+                <h3>Acknowledgment</h3>
+                <p>《Keep In Sonic Touch》 is still in progress, starting from the SomaRumor festival 2021. I would like to show appreciate
+                for the tutoring from Professor Nicolás Varchausky, information support from Professor Matt Lewis, team support from
+                Camila Proto and Guilherme Farkas, film support from Pei-Yao Chang, voice support from Susan Atwill, and everything
+                support from my family.</p><br>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
+            <div class="fakeimg"><img src=img/poster.jpg width="100%" height="100%"></div>
+            </div>
+            <div class="card2">
                 <h2>About The Designer</h2>
                 <div class="fakeimg" ><img src=img/icon.jpg width="30%" height="30%"></div>
                 <p>Sound and media lover from Taiwan, currently studying in Royal College of Art, focusing on
@@ -144,14 +229,14 @@
             </div>
             <div class="card">
                 <h3>Keywords</h3>
-                <div class="fakeimg">Sound Art</div><br>
-                <div class="fakeimg">Skin</div><br>
-                <div class="fakeimg">Soundscape</div><br>
-                <div class="fakeimg">Vibrasacpe</div><br>
-                <div class="fakeimg">Communication</div><br>
-                <div class="fakeimg">Internet</div><br>
+                <div class="fakeimg2">Sound</div><br>
+                <div class="fakeimg2">Soundscape</div><br>
+                <div class="fakeimg2">Skin</div><br>
+                <div class="fakeimg2">Vibrosacpe</div><br>
+                <div class="fakeimg2">Communication</div><br>
+                <div class="fakeimg2">Internet</div><br>
             </div>
-            <div class="card">
+            <div class="card2">
                 <h3>Follow The Designer</h3>
                 <a href="www.shangyunwu.com">www.shangyunwu.com</a>
             </div>
@@ -160,7 +245,7 @@
 
     <div class="footer">
      <div class="centered">
-         <p>All Rights Reserved© 2021 SHANGYUNWU</p>
+         <p>All Rights Reserved © SHANGYUNWU 2021</p>
      </div>
     </div>
 
